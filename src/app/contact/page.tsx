@@ -1,0 +1,90 @@
+import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+
+export default function ContactPage() {
+  return (
+    <>
+      <Header />
+      <main className="bg-[#F8F9FA] text-slate-900">
+        <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="rounded-[30px] border border-slate-200 bg-white p-8 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#FF4500]">Contact</p>
+              <h1 className="mt-3 text-4xl font-extrabold tracking-tight md:text-5xl">Let&apos;s Build Something Great Together.</h1>
+              <div className="mt-8 space-y-5 text-slate-700">
+                <div className="flex items-start gap-3">
+                  <Phone className="mt-1 h-5 w-5 text-[#FF4500]" />
+                  <a href="tel:+8801831740418">+880 183 1740418</a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Mail className="mt-1 h-5 w-5 text-[#FF4500]" />
+                  <a href="mailto:saidul.islam.nishan98@gmail.com">saidul.islam.nishan98@gmail.com</a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="mt-1 h-5 w-5 text-[#FF4500]" />
+                  <span>House 36, Road 1, Block H, Bot Tola, Sector 02, Dhaka 1215, Bangladesh.</span>
+                </div>
+              </div>
+
+              <div className="mt-8 overflow-hidden rounded-[24px] border border-slate-200">
+                <div className="h-64 w-full bg-[radial-gradient(circle_at_center,_rgba(255,69,0,0.3),_rgba(15,23,42,0.1)_45%,_rgba(148,163,184,0.2)_100%)]" />
+              </div>
+            </div>
+
+            <div className="rounded-[30px] border border-slate-200 bg-white p-8 shadow-sm">
+              <form className="space-y-5">
+                <div className="grid gap-5 md:grid-cols-2">
+                  <div>
+                    <label className="mb-2 block text-sm font-medium text-slate-700">Full Name</label>
+                    <input type="text" className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none ring-0 focus:border-[#FF4500]" placeholder="Your name" />
+                  </div>
+                  <div>
+                    <label className="mb-2 block text-sm font-medium text-slate-700">Work Email</label>
+                    <input type="email" className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none ring-0 focus:border-[#FF4500]" placeholder="you@company.com" />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-slate-700">Company Name / Website</label>
+                  <input type="text" className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none ring-0 focus:border-[#FF4500]" placeholder="Company or website" />
+                </div>
+
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-slate-700">Service Category</label>
+                  <div className="flex flex-wrap gap-2">
+                    {['Call Center', 'Virtual Assistant', 'Web Dev', 'Graphic Design', 'SEO'].map((item) => (
+                      <button key={item} type="button" className="rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-700">
+                        {item}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-slate-700">Estimated Budget</label>
+                  <select className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none focus:border-[#FF4500]">
+                    <option>Less than $1k</option>
+                    <option>$1k-$5k</option>
+                    <option>$5k+</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-slate-700">Project Details</label>
+                  <textarea rows={5} className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none focus:border-[#FF4500]" placeholder="Tell us about your project, challenge, or goals." />
+                </div>
+
+                <button type="submit" className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#FF4500] px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-white shadow-lg shadow-orange-500/20">
+                  Send Message &amp; Book Consultation
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}
