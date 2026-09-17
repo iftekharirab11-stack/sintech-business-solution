@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: 'Sintech Business Solutions | Offshore BPO & Digital Growth Partner',
   description:
     'Sintech Business Solutions provides offshore BPO, call center support, virtual assistance, web development, SEO, and digital growth services for businesses worldwide.',
+  icons: {
+    icon: '/images/logo.png',
+    shortcut: '/images/logo.png',
+    apple: '/images/logo.png',
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

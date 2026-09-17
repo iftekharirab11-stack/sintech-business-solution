@@ -38,7 +38,7 @@ export default function ContactPage() {
                 <div className="grid items-center gap-5 sm:grid-cols-[128px_1fr]">
                   <div className="relative aspect-square overflow-hidden rounded-[20px] border border-[#ffd27a]/45">
                     <Image
-                      src="/founder-saidul-islam.png"
+                      src="/images/ceo.jpg"
                       alt="Saidul Islam, Founder and CEO of Sintech Business Solutions"
                       fill
                       sizes="128px"
