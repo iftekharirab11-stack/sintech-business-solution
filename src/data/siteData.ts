@@ -15,7 +15,7 @@ export const navItems = [
       { label: 'Social Media & Digital Ads', href: '/services/digital/social-media-ads', description: 'Paid media and campaign execution' },
     ],
   },
-  { label: 'Industries', href: '/industries' },
+  { label: 'Countries', href: '/industries' },
   { label: 'Process', href: '/process' },
   { label: 'About Us', href: '/about' },
   { label: 'Contact', href: '/contact' },
