@@ -33,7 +33,7 @@ export function Footer() {
           <ul className="space-y-4 text-sm text-slate-300">
             <li className="flex items-start gap-3">
               <MapPin className="mt-1 h-4 w-4 text-[#FF4500]" />
-              <span>House 36, Road 1, Block H, Bot Tola, Sector 02, Dhaka 1215.</span>
+              <span>House-36 (Lift-5), Road-01, Block-H, Sector-2, Aftabnagar, Dhaka, Bangladesh, 1211.</span>
             </li>
             <li className="flex items-center gap-3">
               <Phone className="h-4 w-4 text-[#FF4500]" />
@@ -41,7 +41,12 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-3">
               <Mail className="h-4 w-4 text-[#FF4500]" />
-              <a href="mailto:saidul.islam.nishan98@gmail.com">saidul.islam.nishan98@gmail.com</a>
+              <a href="mailto:sintechbusinesssolutions@gmail.com">sintechbusinesssolutions@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/sintechbusinesssolutions" target="_blank" rel="noreferrer" className="text-[#FFB52E] hover:text-[#FF4500]">
+                Facebook: sintechbusinesssolutions
+              </a>
             </li>
           </ul>
         </div>

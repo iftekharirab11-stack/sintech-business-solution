@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react';
+import { ArrowRight, ExternalLink, Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -20,11 +20,17 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <Mail className="mt-1 h-5 w-5 text-[#FF4500]" />
-                  <a href="mailto:saidul.islam.nishan98@gmail.com">saidul.islam.nishan98@gmail.com</a>
+                  <a href="mailto:sintechbusinesssolutions@gmail.com">sintechbusinesssolutions@gmail.com</a>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="mt-1 h-5 w-5 text-[#FF4500]" />
-                  <span>House 36, Road 1, Block H, Bot Tola, Sector 02, Dhaka 1215, Bangladesh.</span>
+                  <span>House-36 (Lift-5), Road-01, Block-H, Sector-2, Aftabnagar, Dhaka, Bangladesh, 1211.</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <ExternalLink className="h-5 w-5 text-[#FF4500]" />
+                  <a href="https://www.facebook.com/sintechbusinesssolutions" target="_blank" rel="noreferrer" className="font-semibold text-[#FF4500] hover:underline">
+                    Follow us on Facebook
+                  </a>
                 </div>
               </div>
 
