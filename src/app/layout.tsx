@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   description:
     'Sintech Business Solutions provides offshore BPO, call center support, virtual assistance, web development, SEO, and digital growth services for businesses worldwide.',
   icons: {
-    icon: `${BASE_PATH}/images/logo.png`,
-    shortcut: `${BASE_PATH}/images/logo.png`,
-    apple: `${BASE_PATH}/images/logo.png`,
+    icon: `${BASE_PATH}/images/logo.png?v=47e721f`,
+    shortcut: `${BASE_PATH}/images/logo.png?v=47e721f`,
+    apple: `${BASE_PATH}/images/logo.png?v=47e721f`,
   },
 };
 
