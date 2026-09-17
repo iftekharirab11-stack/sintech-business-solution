@@ -22,6 +22,7 @@ export function Footer() {
           <ul className="space-y-3 text-sm text-slate-300">
             <li><Link href="/services/bpo-call-center">BPO Services</Link></li>
             <li><Link href="/services/digital-solutions">Digital Solutions</Link></li>
+            <li><Link href="/process">Calling Process</Link></li>
             <li><Link href="/about">About Us</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>

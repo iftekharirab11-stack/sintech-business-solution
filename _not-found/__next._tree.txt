@@ -1,2 +1,2 @@
-:HL["/sintech-business-solution/_next/static/chunks/3hwck3ddhemt2.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"Sl05Uuwv-reRrt0ZxynEc"}
+:HL["/sintech-business-solution/_next/static/chunks/44n_0ueu0m-wi.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"H7QoYSF8SiUQiHC5sK0Xa"}
