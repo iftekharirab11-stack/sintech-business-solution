@@ -1,11 +1,16 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react';
 import { ArrowRight, Menu, PhoneCall } from 'lucide-react';
 import { navItems } from '@/data/siteData';
 
 const BASE_PATH = process.env.NODE_ENV === 'production' ? '/sintech-business-solution' : '';
 
 export function Header() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 border-b border-[#b96b32]/20 bg-[#fff8e7]/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
@@ -21,8 +26,9 @@ export function Header() {
         <nav className="hidden items-center gap-8 lg:flex">
           {navItems.map((item) => (
             <div key={item.label} className="group relative">
-              <Link
+                <Link
                 href={item.href}
+                  onClick={() => setMobileOpen(false)}
                 className="flex items-center gap-1 text-sm font-medium text-slate-700 transition-colors hover:text-[#FF4500]"
               >
                 {item.label}
@@ -83,10 +89,40 @@ export function Header() {
           </Link>
         </div>
 
-        <button className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#b96b32]/20 bg-[#fff8e7] text-[#75452c] lg:hidden">
+        <button
+          type="button"
+          aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen((open) => !open)}
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#b96b32]/20 bg-[#fff8e7] text-[#75452c] lg:hidden"
+        >
           <Menu className="h-5 w-5" />
         </button>
       </div>
+      {mobileOpen && (
+        <nav className="border-t border-[#b96b32]/20 bg-[#fff8e7] px-4 py-4 shadow-lg lg:hidden">
+          <div className="mx-auto max-w-7xl space-y-1">
+            {navItems.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href === '#' ? '/services/bpo-call-center' : item.href}
+                onClick={() => setMobileOpen(false)}
+                className="block rounded-xl px-4 py-3 text-sm font-semibold text-[#4a2518] transition-colors hover:bg-orange-50 hover:text-[#FF4500]"
+              >
+                {item.label}
+              </Link>
+            ))}
+            <Link
+              href="/contact"
+              onClick={() => setMobileOpen(false)}
+              className="mt-2 flex items-center justify-center gap-2 rounded-full bg-[#FF4500] px-5 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-white"
+            >
+              Get a Free Quote
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </nav>
+      )}
     </header>
   );
 }

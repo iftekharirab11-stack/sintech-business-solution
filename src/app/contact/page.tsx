@@ -1,11 +1,22 @@
+'use client';
+
 import { ArrowRight, ExternalLink, Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
+import { useState } from 'react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
 const BASE_PATH = process.env.NODE_ENV === 'production' ? '/sintech-business-solution' : '';
 
 export default function ContactPage() {
+  const [selectedServices, setSelectedServices] = useState<string[]>([]);
+
+  const toggleService = (service: string) => {
+    setSelectedServices((current) => current.includes(service)
+      ? current.filter((item) => item !== service)
+      : [...current, service]);
+  };
+
   return (
     <>
       <Header />
@@ -83,8 +94,14 @@ export default function ContactPage() {
                   <label className="mb-2 block text-sm font-medium text-slate-700">Service Category</label>
                   <div className="flex flex-wrap gap-2">
                     {['Call Center', 'Virtual Assistant', 'Web Dev', 'Graphic Design', 'SEO'].map((item) => (
-                      <button key={item} type="button" className="rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-700">
-                        {item}
+                      <button
+                        key={item}
+                        type="button"
+                        aria-pressed={selectedServices.includes(item)}
+                        onClick={() => toggleService(item)}
+                        className={`rounded-full border px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] transition-colors ${selectedServices.includes(item) ? 'border-[#FF4500] bg-[#FF4500] text-white' : 'border-slate-200 bg-slate-50 text-slate-700 hover:border-[#FF4500] hover:text-[#FF4500]'}`}
+                      >
+                        {selectedServices.includes(item) ? 'Selected: ' : ''}{item}
                       </button>
                     ))}
                   </div>
