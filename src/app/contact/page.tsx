@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
+const BASE_PATH = process.env.NODE_ENV === 'production' ? '/sintech-business-solution' : '';
+
 export default function ContactPage() {
   return (
     <>
@@ -38,7 +40,7 @@ export default function ContactPage() {
                 <div className="grid items-center gap-5 sm:grid-cols-[128px_1fr]">
                   <div className="relative aspect-square overflow-hidden rounded-[20px] border border-[#ffd27a]/45">
                     <Image
-                      src="/images/ceo.jpg"
+                      src={`${BASE_PATH}/images/ceo.jpg`}
                       alt="Saidul Islam, Founder and CEO of Sintech Business Solutions"
                       fill
                       sizes="128px"

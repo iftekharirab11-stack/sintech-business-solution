@@ -17,6 +17,8 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { industryMarquee, processSteps, servicePillars } from '@/data/siteData';
 
+const BASE_PATH = process.env.NODE_ENV === 'production' ? '/sintech-business-solution' : '';
+
 const statCards = [
   { value: '70%', label: 'Cost Reduced' },
   { value: '24/7', label: 'Support' },
