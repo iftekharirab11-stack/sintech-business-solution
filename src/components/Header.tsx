@@ -8,8 +8,8 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-[#b96b32]/20 bg-[#fff8e7]/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-10 w-10 overflow-hidden rounded-xl border border-[#ffb52e]/70 bg-[#4a2518] shadow-lg shadow-orange-500/20">
-            <Image src="/images/logo.png" alt="Sintech logo" fill sizes="40px" className="object-cover" />
+          <div className="relative h-10 w-24 overflow-hidden rounded-xl border border-[#ffb52e]/70 bg-[#4a2518] shadow-lg shadow-orange-500/20">
+            <Image src="/images/logo.png" alt="Sintech logo" fill sizes="96px" className="object-contain" />
           </div>
           <div className="text-xl font-black tracking-[0.2em] text-[#4a2518]">
             SINTECH
