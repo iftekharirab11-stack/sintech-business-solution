@@ -1,4 +1,5 @@
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react';
+import Image from 'next/image';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
@@ -24,6 +25,26 @@ export default function ContactPage() {
                 <div className="flex items-start gap-3">
                   <MapPin className="mt-1 h-5 w-5 text-[#FF4500]" />
                   <span>House 36, Road 1, Block H, Bot Tola, Sector 02, Dhaka 1215, Bangladesh.</span>
+                </div>
+              </div>
+
+              <div className="mt-8 overflow-hidden rounded-[26px] border border-[#b96b32]/25 bg-[#4a2518] p-3 shadow-lg shadow-[#7a4524]/15">
+                <div className="grid items-center gap-5 sm:grid-cols-[128px_1fr]">
+                  <div className="relative aspect-square overflow-hidden rounded-[20px] border border-[#ffd27a]/45">
+                    <Image
+                      src="/founder-saidul-islam.png"
+                      alt="Saidul Islam, Founder and CEO of Sintech Business Solutions"
+                      fill
+                      sizes="128px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="px-2 py-3">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#ffc15a]">Meet the founder</p>
+                    <h2 className="mt-2 text-2xl font-bold text-[#fff3d6]">SAIDUL ISLAM</h2>
+                    <p className="mt-1 text-sm font-medium uppercase tracking-[0.16em] text-[#ffd27a]">Founder &amp; CEO</p>
+                    <p className="mt-3 text-sm leading-6 text-[#ffe9c1]">Building practical BPO and digital solutions that help ambitious teams grow with confidence.</p>
+                  </div>
                 </div>
               </div>
 
