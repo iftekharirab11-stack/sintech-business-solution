@@ -3,14 +3,14 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="bg-[#0B0F17] text-slate-200">
+    <footer className="bg-[#4a2518] text-[#ffe9c1]">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-3 lg:px-8">
         <div>
           <div className="mb-6 flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#FF4500] text-sm font-black text-white">
+            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f47721] text-sm font-black text-[#fff8e7]">
               S
             </div>
-            <div className="text-xl font-black tracking-[0.2em] text-white">SINTECH</div>
+            <div className="text-xl font-black tracking-[0.2em] text-[#fff3d6]">SINTECH</div>
           </div>
           <p className="max-w-sm text-sm leading-7 text-slate-300">
             Bangladesh-based BPO and business solution partner delivering smarter operations, digital growth, and dependable global support.
