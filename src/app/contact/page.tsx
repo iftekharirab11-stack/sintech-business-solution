@@ -67,8 +67,14 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="mt-8 overflow-hidden rounded-[24px] border border-slate-200">
-                <div className="h-64 w-full bg-[radial-gradient(circle_at_center,_rgba(255,69,0,0.3),_rgba(15,23,42,0.1)_45%,_rgba(148,163,184,0.2)_100%)]" />
+              <div className="relative mt-8 h-64 overflow-hidden rounded-2xl bg-[#0B0F17] p-8">
+                <Image
+                  src={`${BASE_PATH}/images/logo.png?v=47e721f`}
+                  alt="Sintech Business Solutions logo"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-contain p-6"
+                />
               </div>
             </div>
 
