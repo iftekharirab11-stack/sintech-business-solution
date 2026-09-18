@@ -37,7 +37,7 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="mt-1 h-5 w-5 text-[#FF4500]" />
-                  <span>House-36 (Lift-5), Road-01, Block-H, Sector-2, Aftabnagar, Dhaka, Bangladesh, 1211.</span>
+                  <span>House-36(Lift-5), Road- 01, Block- H, Sector-2, Aftabnagar, Dhaka, Bangladesh, 1212</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <ExternalLink className="h-5 w-5 text-[#FF4500]" />
@@ -52,7 +52,7 @@ export default function ContactPage() {
                   <div className="relative aspect-square overflow-hidden rounded-[20px] border border-[#ffd27a]/45">
                     <Image
                       src={`${BASE_PATH}/images/ceo.jpg`}
-                      alt="Saidul Islam, Founder and CEO of Sintech Business Solutions"
+                      alt="Saidul Islam Nishan, Founder and CEO of Sintech Business Solutions"
                       fill
                       sizes="128px"
                       className="object-cover"
@@ -60,14 +60,14 @@ export default function ContactPage() {
                   </div>
                   <div className="px-2 py-3">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#ffc15a]">Meet the founder</p>
-                    <h2 className="mt-2 text-2xl font-bold text-[#fff3d6]">SAIDUL ISLAM</h2>
+                    <h2 className="mt-2 text-2xl font-bold text-[#fff3d6]">SAIDUL ISLAM NISHAN</h2>
                     <p className="mt-1 text-sm font-medium uppercase tracking-[0.16em] text-[#ffd27a]">Founder &amp; CEO</p>
                     <p className="mt-3 text-sm leading-6 text-[#ffe9c1]">Building practical BPO and digital solutions that help ambitious teams grow with confidence.</p>
                   </div>
                 </div>
               </div>
 
-              <div className="relative mt-8 h-64 overflow-hidden rounded-2xl bg-[#0B0F17] p-8">
+              <div className="relative my-4 flex h-32 w-full items-center justify-center">
                 <Image
                   src={`${BASE_PATH}/images/logo.png?v=47e721f`}
                   alt="Sintech Business Solutions logo"

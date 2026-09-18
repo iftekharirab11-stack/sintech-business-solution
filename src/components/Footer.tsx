@@ -33,7 +33,7 @@ export function Footer() {
           <ul className="space-y-4 text-sm text-slate-300">
             <li className="flex items-start gap-3">
               <MapPin className="mt-1 h-4 w-4 text-[#FF4500]" />
-              <span>House-36 (Lift-5), Road-01, Block-H, Sector-2, Aftabnagar, Dhaka, Bangladesh, 1211.</span>
+              <span>House-36(Lift-5), Road- 01, Block- H, Sector-2, Aftabnagar, Dhaka, Bangladesh, 1212</span>
             </li>
             <li className="flex items-center gap-3">
               <Phone className="h-4 w-4 text-[#FF4500]" />
