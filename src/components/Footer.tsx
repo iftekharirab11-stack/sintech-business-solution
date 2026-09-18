@@ -1,5 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, MapPin, Phone } from 'lucide-react';
+
+const BASE_PATH = process.env.NODE_ENV === 'production' ? '/sintech-business-solution' : '';
 
 export function Footer() {
   return (
@@ -7,8 +10,13 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-3 lg:px-8">
         <div>
           <div className="mb-6 flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f47721] text-sm font-black text-[#fff8e7]">
-              S
+            <div className="relative h-8 w-8 shrink-0">
+              <Image
+                src={`${BASE_PATH}/images/logo.png?v=47e721f`}
+                alt="Sintech Logo"
+                fill
+                className="object-contain"
+              />
             </div>
             <div className="text-xl font-black tracking-[0.2em] text-[#fff3d6]">SINTECH</div>
           </div>
