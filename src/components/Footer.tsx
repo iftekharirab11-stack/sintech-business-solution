@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Mail, MapPin, Phone } from 'lucide-react';
 
-const BASE_PATH = process.env.NODE_ENV === 'production' ? '/sintech-business-solution' : '';
+const BASE_PATH = '';
 
 export function Footer() {
   return (

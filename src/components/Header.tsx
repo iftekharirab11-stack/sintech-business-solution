@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { ArrowRight, Menu, PhoneCall } from 'lucide-react';
 import { navItems } from '@/data/siteData';
 
-const BASE_PATH = process.env.NODE_ENV === 'production' ? '/sintech-business-solution' : '';
+const BASE_PATH = '';
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);

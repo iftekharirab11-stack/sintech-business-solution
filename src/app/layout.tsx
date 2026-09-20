@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-const BASE_PATH = process.env.NODE_ENV === 'production' ? '/sintech-business-solution' : '';
+const BASE_PATH = '';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 

@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
-const BASE_PATH = process.env.NODE_ENV === 'production' ? '/sintech-business-solution' : '';
+const BASE_PATH = '';
 
 export default function ContactPage() {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
